@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "server": "nodemon app.js --prefix server",
+    "client": "npm run start --prefix client/todo_app_front",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.3"
+  }
+}

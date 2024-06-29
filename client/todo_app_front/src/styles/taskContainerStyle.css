@@ -1,0 +1,38 @@
+:root{
+    --container-border:#DEDFE5;
+    --hover: #EFEFEF;
+    --tasks-container-background:#ffffff;
+    --header-box-shadow-color:#0000001A;
+}
+
+.tasks-container{
+    width: 100%;
+    height: 22rem;
+    overflow-y: auto;
+    border-top: 2px solid var(--container-border);
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background: var(--tasks-container-background);
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    box-shadow: 0 4px 4px var(--header-box-shadow-color);
+}
+
+::-webkit-scrollbar {
+    width: .5rem;
+}
+  
+  
+::-webkit-scrollbar-track {
+    background: var(--select-menu-background-color);
+    position: relative;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--container-border); 
+    height: 1.25rem;
+    border-radius: .5rem;
+}
+

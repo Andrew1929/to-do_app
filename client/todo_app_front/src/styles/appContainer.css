@@ -1,0 +1,13 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem 15rem;
+    border-radius: .5rem;
+    background: #F2F5F7;;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --text-and-icons:#323749;
+    --btns: #00AE1C;
+    --btn-hover: #008915;
+    --header-background: #ffffff;
+    --header-box-shadow-color:#0000001A;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+}
+
+.app-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: var(--header-background);
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    box-shadow: 0 4px 4px var(--header-box-shadow-color);
+}
+
+.input-field{
+    border: none;
+    font-size: 1rem;
+    width: 90%;
+}
+
+.input-field:focus{
+    outline: none;
+}
+
+.input-field-btn{
+    background-color: var(--btns);
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    border-radius: .5rem;
+    font-size: 1rem;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.input-field-btn:hover{
+    background: var(--btn-hover);
+}
+
+.input-field-btn:active{
+    border: 2px solid #323749;
+}
+

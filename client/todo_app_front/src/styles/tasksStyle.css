@@ -1,0 +1,99 @@
+:root{
+    --container-border:#DEDFE5;
+    --hover: #EFEFEF;
+    --task-background:#ffffff;
+    --icon-color:#323749;
+}
+
+.task{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--container-border);
+    border-radius: .5rem;
+    padding: 1rem;
+    border-bottom: 3px solid var(--container-border);
+    background: var(--task-background);
+    width: auto;
+    word-wrap: break-word;
+}
+
+.task-container{
+    display: grid;
+    gap: 1rem;
+}
+
+.task:hover{
+    background: var(--hover);
+
+    .task-icons{
+        display: flex;
+    }
+
+    .editField{
+        background: var(--hover);
+    }
+}
+
+.task-content{
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+}
+
+#cb{
+    margin-top: .25rem;
+    scale: 125%;
+    accent-color: rgb(1, 165, 1);
+}
+
+.task-description{
+    border-left: 2px solid var(--container-border);
+    padding:0 1rem;
+    width: 100%;
+    word-break: break-word;
+    word-wrap: break-word;
+    overflow-wrap: break-word; 
+}
+
+.editField{
+    border: none;
+    font-size: 1rem;
+    border-left: 2px solid var(--container-border);
+    padding:0 1rem;
+    width: 100%;
+}
+
+.editField:focus{
+    outline: none;
+}
+
+.task-btns-container{
+    display: flex;
+    gap: 1rem;
+}
+
+.task-btn{
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.task-icons{
+    display: none;
+    gap: 1rem;
+    position: relative; 
+    right: 1rem; 
+    top: 50%; 
+    transform: translateY(-50%);
+    color: var(--icon-color);
+}
+
+.task.completed{
+    background: var(--hover);
+}
+
+.task-description.completed {
+    text-decoration: line-through;
+}
+
